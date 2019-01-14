@@ -24,3 +24,13 @@ proxycommand ssh bastion -W %h:%p
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 1200kbit pts/0    10.132.0.2       10:32    0.00s  0.04s  0.00s w
 ```
+3. VPN-сервер Pritunl
+Параметры подключения:
+```
+bastion_IP = 35.210.101.122
+someinternalhost_IP = 10.132.0.3
+```
+SSL сертификат выпускаем на доменное имя 35.210.101.122.sslip.io через настроки Pritunl
+
+Подключение к Pritunl серверу с рабочего хоста:
+```sudo openvpn --config cloud-bastion.vpn```
