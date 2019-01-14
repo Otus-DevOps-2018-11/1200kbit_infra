@@ -1,6 +1,7 @@
 # 1200kbit_infra
 1200kbit Infra repository
-###ДЗ Cloud-Bastion
+
+### ДЗ Cloud-Bastion
 
 1. Способ подключения по ssh к внутреннему хосту в одну комнаду:
 `ssh -o ProxyCommand='ssh -W %h:%p 1200kbit@35.210.101.122' 1200kbit@10.132.0.3`
