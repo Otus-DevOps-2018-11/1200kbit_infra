@@ -1,6 +1,13 @@
 # 1200kbit_infra
 1200kbit Infra repository
 
+### ДЗ Cloud-Testapp
+
+```
+testapp_IP = 34.76.219.59
+testapp_port = 9292
+```
+
 ### ДЗ Cloud-Bastion
 
 1. Способ подключения по ssh к внутреннему хосту в одну комнаду:
